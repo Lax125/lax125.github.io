@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Playing 2048 in a Terminal"
+date:   2021-11-30 18:15:44 +1100
+categories: side-project
+---
+# Overview
+
+<video autoplay controls controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture disableremoteplayback loop muted playsinline x-webkit-airplay="deny" style="width: 45%; float: right; margin: 0em 1em 1em 1em" alt="A demo of my command-line version of 2048." title="CLI 2048 Demo">
+    <source src="/assets/001-cli-2048/demo.webm" type="video/webm" />
+    <source src="/assets/001-cli-2048/demo.mp4" type="video/mp4" />
+    <source src="/assets/001-cli-2048/demo.ogv" type="video/ogg" />
+    <i>Your <del>dinosaur</del>browser doesn't support HTML5 <code>&lt;video&gt;</code> tags. :( To see my animations, please try viewing this page in a browser that does!</i>
+</video>
+
+I remade the popular game of [2048](https://2048.io/) to work on the Windows command line!
+
+The entire game was programmed in C++, and you can view the source code [here](https://github.com/Lax125/CLI-2048). I used [ANSI escape sequences](https://en.wikipedia.org/wiki/ANSI_escape_code) to colour the tiles and draw the border of the board. To clear the terminal and detect arrow key presses, I used the Windows development kit.
+
+I made this over a span of 72 hours as a personal challenge, and I'm happy with how it turned out. The only thing I feel is missing is animation, specifically for each moving tile.
+
+<div style="clear:right" />
+
+# Extras
+
+<video autoplay controls controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture disableremoteplayback loop muted playsinline x-webkit-airplay="deny" style="width: 55%; float: left; margin: 0em 1em 1em 1em" alt="A demo of showing options for board dimensions and autoplay" title="CLI 2048 Options Demo">
+    <source src="/assets/001-cli-2048/extras-demo.webm" type="video/webm" />
+    <source src="/assets/001-cli-2048/extras-demo.mp4" type="video/mp4" />
+    <source src="/assets/001-cli-2048/extras-demo.ogv" type="video/ogg" />
+    <i>Your <del>dinosaur</del>browser doesn't support HTML5 <code>&lt;video&gt;</code> tags. :( To see my animations, please try viewing this page in a browser that does!</i>
+</video>
+
+My remake even supports boards of any *n* by *m* board, numbers above 2048, and random automatic play. I found Boost's command line parser to be overkill for implementing this (and to be honest I didn't want to go through the trouble of building the entirety of Boost), so I make my own simple parser to support each option.
+
+One final option isn't shown in this demo, which controls how fast autoplay is.
+
+<div style="clear:left" />
