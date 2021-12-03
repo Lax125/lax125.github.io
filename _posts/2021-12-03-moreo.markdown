@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Cookies and Cream Galore!"
+date:   2021-12-03 21:33:06 +1100
+categories: coursework
+---
+# Overview
+
+<img src="/assets/003-moreo/chart.jpg" alt="Chart showing Oreo cookies with different permutations of cookies and cream" style="width:45%; float:right; margin: 0em 1em 1em 2em">
+
+For my digital arts course, I was asked to make a [p5.js](https://p5js.org/) social media advert for a supermarket item. After going through a few options in my head, I remembered this funny image about Oreos, which you can see on the right.
+
+The resulting advert allows the user to make any permutation of cookies and cream, and dunk all of it into a glass of milk. You can play with it [here](https://Lax125.github.io/Moreo/).
+
+<div style="clear:right"></div>
+
+# Extras
+
+<a href="https://Lax125.github.io/Moreo/"><img src="/assets/003-moreo/screenshot.png" alt="Screenshot of the Oreo advert" style="width:50%; float:left; margin: 0em 2em 1em 1em"></a>
+
+Instead of using WEBGL, I emulated an isometric perspective for each disk using ellipses and rectangles. I used a simple state machine to decide what to draw each frame. For the smooth animations, I used frame counting to determine how far along each animation is.
+
+<div style="clear:left"></div>

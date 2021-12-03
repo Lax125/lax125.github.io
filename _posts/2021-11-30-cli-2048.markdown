@@ -34,4 +34,4 @@ My remake even supports boards of any *n* by *m* board, numbers above 2048, and 
 
 One final option isn't shown in this demo, which controls how fast autoplay is.
 
-<div style="clear:left" />
+<div style="clear:left"></div>
